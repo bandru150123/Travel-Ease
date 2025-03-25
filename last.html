@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Ease</title>
+    <style>
+        /* Reset and global styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Background styling */
+        .container {
+            background: url('background-image.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        /* Semi-transparent overlay */
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            width: 50%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        /* Main heading */
+        .content h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Contact and address sections */
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .address, .contact {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .email {
+            display: inline-block;
+            background: #007bff;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        /* Footer links */
+        .footer {
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .overlay {
+                width: 90%;
+                text-align: center;
+            }
+
+            .info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="overlay">
+            <div class="content">
+                <h1>Travel beyond your</h1><h1> imagination, with </h1><h1>Travel Ease!</h1>
+                <div class="info">
+                    <div class="address">
+                        <h2>Address</h2>
+                        <p>333 Metro Park, Suite: S-102</p>
+                        <p>Rochester</p>
+                        <p>NY - 14623, USA</p>
+                        
+                    </div>
+
+                    <div class="contact">
+                        <h2>Contact</h2>
+                        <a href="mailto:info@travelease.com" class="email">info@travelease.com</a>
+                        <p>Phone: (585) 272-0380</p>
+                        <p>Toll Free: 800-333-0909</p>
+                    </div>
+                </div>
+                
+                <div class="footer">
+                    <a href="#">Privacy Policy</a> • 
+                    <a href="#">Terms and Conditions</a> • 
+                    <a href="#">Resources</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Travel Ease Website Loaded Successfully!");
+        });
+    </script>
+
+</body>
+</html>
